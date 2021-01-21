@@ -1,0 +1,61 @@
+Userinput/ keypresses press - 18 Nov 2020
+WASD Movement
+Teleportation cool down mechanic
+Teleportation positioning (MATHS)
+First level hardcoded
+Collisions circle rect function (grounded)
+Collisions, floor, roof
+Friction
+Collision, sides - 3 Dec 2020 Version
+
+Tweaked movement (can jump 200ms after being last grounded)
+Collision with left side of player and right side of player to fix teleportation to nearest floor bug
+Draw level function
+3 Levels made dynamically - 19 Dec 2020 Version
+
+Split project into multiple files
+Make level picking more dynamic (down to one variable)
+Rough version of level switching - 28 Dec 2020 Version
+
+Complete dynamic level switching
+Player animations - 29 Dec 2020 Version
+
+Platforms randomised wooden platform sprites
+Dynamic removable platform blocking the finish
+Rough winning condition demo - 30 Dec 2020 Version
+
+Created rocket launcher sprites
+Created rocket projectile sprites
+Dynamic and easy drawing of rocket launchers per level - 31 Dec 2020 Version
+
+Draw rocket projectiles with velocity and positional vectors
+Added specifics per launcher
+Implemented rocket launcher cooldown
+rocket projectiles turning to player - 1 Jan 2021 Version
+
+Projectile collision with map
+Projectile collision with player
+Projectile explosion animation
+Projectile explosion blast radius
+Blast radius collision with player
+Player death animation
+Rough version of player death when in blast radius
+Player death when in blast radius
+Respawn on same level
+Slow projectile velocity when inside the teleporting radius
+Draw arrow pointing to exit in level1
+Draw yellow buttons
+Destroy buttons when in blastradius
+Win conditions on yellow buttons destroyed
+Reset yellow buttons and finish blocker on death
+Rough start screen -  2 Jan 2021 Version
+
+lineline collision
+linerect collision
+line of sight function
+turrets stop shooting when (lineofsight == false) - 16 Jan 2021 Version
+
+
+level 4 platforms & turrest & buttons made
+dynamic upgrading system made on gamestate 2
+level 4 platforms bugfix - 19 Jan 2021 Version
