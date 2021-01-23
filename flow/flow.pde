@@ -677,6 +677,21 @@ void levelcheck() {
     playerpos = new PVector(width/2,0);
     resetrockets();
     resetexplosions();
+  } else if (grounded(finish) == true && currlevelint == 4) {    
+    float[] level5 = {width/2.2, height-1, (width-((width/2.2)*2)), 1, width/2.2, height-5, (width-((width/2.2)*2)), 5, width-(width/2.2), height-5, width/2.2, 5, 0, height-5, width/2.2, 5, (width/14)*3, (height/9)*3, width/7, 20, (width/14)*7, (height/9)*7, width/6, 20, width-(width/5), (height/9)*5, width/5, 20};
+    int[] level5turrets = {(width/14)*3+((width/7)/2), 0, 0, 1, 0, width-((width/5)/2), 0, 0, 1, 0};
+    int[] level5buttons = {width-((width/5)/2)-10, (height/9)*5-10, 10, 10, width-((width/5)/2)+10, (height/9)*5-10, 10, 10, (width/14)*3+((width/7)/2)-10, (height/9)*3-10, 10, 10, (width/14)*3+((width/7)/2)+10, (height/9)*3-10, 10, 10};
+
+    arrayCopy(level5, staticlevel);
+    currlevel = level5;
+    arrayCopy(level5buttons, staticbuttons);
+    currlevelbuttons = level5buttons;
+    currlevelturrets = level5turrets;
+    currlevelint = 5;
+
+    playerpos = new PVector(width/2,0);
+    resetrockets();
+    resetexplosions();
   }
 }
 
