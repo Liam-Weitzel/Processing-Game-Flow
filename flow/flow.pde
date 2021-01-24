@@ -142,7 +142,7 @@ void setup() {
  //second rect is the platform blocking the finish
  //third and fourth rects are the floor
  
- int[] level1buttons = {0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0};
+ int[] level1buttons = {0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0,0};
  
  int[] level1turrets = {};
  //first param: turret xpos
@@ -688,6 +688,39 @@ void levelcheck() {
     currlevelbuttons = level5buttons;
     currlevelturrets = level5turrets;
     currlevelint = 5;
+
+    playerpos = new PVector(width/2,0);
+    resetrockets();
+    resetexplosions();
+  } else if (grounded(finish) == true && currlevelint == 5) {    
+    float[] level6 = {width/2.2, height-1, (width-((width/2.2)*2)), 1, width/2.2, height-5, (width-((width/2.2)*2)), 5, width-(width/2.2), height-5, width/2.2, 5, 0, height-5, width/2.2, 5, width*1/7+50, height/2-height/4, width*1/7, 20, 0, height/2+height/4, width*1/7, 20, width*5/7-50, height/2-height/4, width*1/7, 20, width, height/2+height/4, width*1/7, 20, width-width*1/7, height/2+height/4, width*1/7, 20};
+    /*
+    rect(width*1/7+50, height/2-height/4, width*1/7, 20);
+    rect(0, height/2+height/4, width*1/7, 20);
+    rect(width*5/7-50, height/2-height/4, width*1/7, 20);
+    rect(width, height/2+height/4, width*1/7, 20);
+  
+    rect(width*1/7+50+((width*1/7)/2)-10, height/2-height/4-10, 10, 10);
+    rect(width*1/7+50+((width*1/7)/2)+10, height/2-height/4-10, 10, 10);
+    
+    rect(0+((width*1/7)/2)-10, height/2+height/4-10, 10, 10);
+    rect(0+((width*1/7)/2)+10, height/2+height/4-10, 10, 10);
+  
+    rect(width*5/7-50+((width*1/7)/2)-10, height/2-height/4-10, 10, 10);
+    rect(width*5/7-50+((width*1/7)/2)+10, height/2-height/4-10, 10, 10);
+     
+    rect(width-((width*1/7)/2)-10, height/2+height/4-10, 10, 10);
+    rect(width-((width*1/7)/2)+10, height/2+height/4-10, 10, 10);
+    */ 
+    int[] level6turrets = {width*1/7+50+((width*1/7)/2)-12, height/2-height/4+20, 0, 1, 0, 0+((width*1/7)/2)-12, height/2+height/4+20, 0, 1, 0, width*5/7-50+((width*1/7)/2)-12, height/2-height/4+20, 0, 1, 0, width-((width*1/7)/2)-12, height/2+height/4+20, 0, 1, 0};
+    int[] level6buttons = {width-((width*1/7)/2)-15, height/2+height/4-10, 10, 10, width-((width*1/7)/2)+5, height/2+height/4-10, 10, 10, width*5/7-50+((width*1/7)/2)-15, height/2-height/4-10, 10, 10, width*5/7-50+((width*1/7)/2)+5, height/2-height/4-10, 10, 10, 0+((width*1/7)/2)-15, height/2+height/4-10, 10, 10, 0+((width*1/7)/2)+5, height/2+height/4-10, 10, 10, width*1/7+50+((width*1/7)/2)-15, height/2-height/4-10, 10, 10, width*1/7+50+((width*1/7)/2)+5, height/2-height/4-10, 10, 10};
+
+    arrayCopy(level6, staticlevel);
+    currlevel = level6;
+    arrayCopy(level6buttons, staticbuttons);
+    currlevelbuttons = level6buttons;
+    currlevelturrets = level6turrets;
+    currlevelint = 6;
 
     playerpos = new PVector(width/2,0);
     resetrockets();
