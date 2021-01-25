@@ -62,3 +62,5 @@ level 4 platforms bugfix - 19 Jan 2021 Version
 level 5 added - 23 jan 2021
 
 level 6 added - 24 Jan 2021
+
+level 7 added - 25 Jan 2021

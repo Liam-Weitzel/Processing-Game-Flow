@@ -725,6 +725,26 @@ void levelcheck() {
     playerpos = new PVector(width/2,0);
     resetrockets();
     resetexplosions();
+  }else if (grounded(finish) == true && currlevelint == 6) {
+    gamestate = 2; //upgrade available
+
+    int h = height/8;
+    int w = width/12;
+
+    float[] level7 = {width/2.2, height-1, (width-((width/2.2)*2)), 1, width/2.2, height-5, (width-((width/2.2)*2)), 5, width-(width/2.2), height-5, width/2.2, 5, 0, height-5, width/2.2, 5, w, 4*h, 2*w, 20, 9*w, 4*h, 2*w, 20, 3.5*w, 1*h, 5*w, 20};
+    int[] level7turrets = {0, 3*h, 2, 1, 0, 2*w-10, 4*h+20, 0, 1, 0, (int)(3.5*w+50), 1*h+20, 0, 1, 0, (int) (8.5*w-50), 1*h+20, 0, 1, 0, 10*w-10, 4*h+20, 0, 1, 0, 12*w-25, 3*h, 3, 1, 0};
+    int[] level7buttons = {3*w-15, 8*h-15, 10, 10, 3*w+5, 8*h-15, 10, 10, 2*w-15, 4*h-10, 10, 10, 2*w+5, 4*h-10, 10, 10, 10*w-15, 4*h-10, 10, 10, 10*w+5, 4*h-10, 10, 10, 9*w-15, 8*h-15, 10, 10, 9*w+5, 8*h-15, 10, 10};
+
+    arrayCopy(level7, staticlevel);
+    currlevel = level7;
+    arrayCopy(level7buttons, staticbuttons);
+    currlevelbuttons = level7buttons;
+    currlevelturrets = level7turrets;
+    currlevelint = 7;
+
+    playerpos = new PVector(width/2,0);
+    resetrockets();
+    resetexplosions();
   }
 }
 
