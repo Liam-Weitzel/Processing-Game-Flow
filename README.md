@@ -25,7 +25,7 @@
 
 ## What is this?
 
-Flow is a game made in Processing about reaction time and precision. The player controls a beach ball that can teleport, roll around and jump. Weirdly, cannons shooting rocks have it out for this beach ball... The goal is to use your teleportation abilities and skill to evade the rocks and survive. The player progresses through the levels by dodging the rocks and making them impact all yellow actuators.
+Flow is a 2d platformer game made in processing to reinforce learning about reaction time and precision. The player controls a beach ball that can teleport, roll around and jump. Weirdly, cannons shooting rocks have it out for this beach ball... The goal is to use your teleportation abilities and skill to evade the rocks and survive. The player progresses through the levels by dodging the rocks and making them impact all yellow actuators.
 
 ## Demo
 
